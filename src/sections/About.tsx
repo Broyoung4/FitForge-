@@ -42,7 +42,7 @@ const About = () => {
       <div className='grid lg:grid-cols-3 grid-cols-1 gap-6'>
         <div className='lg:row-span-2 border border-sea-green relative '>
          <img src= {images.sideviewwoman} className='object-fill ' />
-          <span className='flex justify-center items-center bg-white border border-slate-gray text-sea-green py-2 absolute bottom-10 left-16 w-[200px] h-auto'>
+          <span className='flex justify-center items-center bg-white border border-slate-gray text-sea-green py-2 absolute bottom-10 xl:right-10 left-16 w-[200px] h-auto'>
             Fit-Forge <GiMuscleUp className='text-sea-green text-4xl' />
           </span>
           

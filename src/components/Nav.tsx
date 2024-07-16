@@ -1,5 +1,8 @@
 import { BsJustify } from "react-icons/bs"; 
-import { BsScissors } from "react-icons/bs";
+import { FaDumbbell } from "react-icons/fa6";
+import { Link } from 'react-router-dom';
+
+
 import images from "../constants/images";
 import {useState,useEffect} from 'react';
 const Nav = () => {
@@ -30,9 +33,9 @@ const Nav = () => {
   return (
     <div className="absolute z-10 w-full  padding-x py-8">
       <nav className='flex justify-between items-center max-container'>
-        <a href="" className=' text-base'><img src={images.Logo} className='w-[100px] h-auto'/></a>
+        <a href="#home" className=' text-base'><img src={images.Logo} className='w-[100px] h-auto'/></a>
         <ul className='hidden sm:flex items-center justify-center font-montserrat '>
-          <li className='mx-4 hover:text-sea-green font-semibold'><a href='#home'>HOME</a></li>
+          <li className='mx-4 hover:text-sea-green font-semibold'><Link to='/'>HOME</Link></li>
           <li className='mx-4 hover:text-sea-green font-semibold'><a href='#gallery'>EXERCISES</a></li>
            <li className='mx-4 hover:text-sea-green font-semibold'><a href='#contact'>ABOUT</a></li>
         </ul>
@@ -41,13 +44,13 @@ const Nav = () => {
     
         </div>
         <div className='z-30 cursor-pointer sm:hidden flex'>
-          {!toggle && <BsJustify size={30} color={'grey'}onClick={() => setToggle(true)} className='' />}
-          {toggle && <BsScissors size={30} color={'green'} onClick={() => setToggle(false)} className='z-20' />}
+          {!toggle && <BsJustify size={30} color={'grey'}onClick={() => setToggle(true)} />}
+          {toggle && <FaDumbbell size={30} color={'green'} onClick={() => setToggle(false)} className='z-20' />}
         </div>
         {toggle && (
-      <div className='scale-in-ver-top absolute top-0 left-0 w-full h-70% flex justify-center items-center z-10 bg-black py-12 transition duration-500'>
-        <ul className='flex flex-col justify-center items-center gap-10 text-white mt-10'>
-          <li className='hover:text-gray-700' onClick={() => setToggle(false)} ><a href='#home'>HOME</a></li>
+      <div className='scale-in-ver-top absolute top-0 left-0 w-full h-70% flex justify-center items-center z-10 glassmorphism py-12 transition duration-500'>
+        <ul className='flex flex-col justify-center items-center gap-10 text-sea-green font-bold mt-10'>
+          <li className=' hover:text-gray-700' onClick={() => setToggle(false)} ><a href='#home'>HOME</a></li>
           <li className='hover:text-gray-700' onClick={() => setToggle(false)}><a href='#gallery'>MODELS</a></li>
            <li className='hover:text-gray-700' onClick={() => setToggle(false)}><a href='#contact'>CONTACT</a></li>
         </ul>

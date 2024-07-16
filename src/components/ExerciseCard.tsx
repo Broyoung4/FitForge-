@@ -1,5 +1,4 @@
 
-import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 
@@ -19,10 +18,10 @@ const ExerciseCard = ({ exercise, loading }: ExerciseProps) => {
     return <div>Loading...</div>;
   }
   return (
-    <Link to={`/exercise/${exercise.id}`} className='exercise-card ' >
+    <Link to={`/exercise/${exercise.id}`} className='exercise-card group' >
      <img src={exercise.gifUrl} alt={exercise.name} loading='lazy' />
-      <div className='flex justify-center items-center gap-6'>
-        <button className='bg-sea-green text-white rounded-lg px-2 py-1 capitalize'>
+      <div className='flex justify-between items-center gap-6'>
+        <button className='bg-sea-green text-white rounded-lg px-2 py-1 text-[px] capitalize'>
           {exercise.bodyPart} 
         </button>
         <button className='bg-black text-white rounded-lg px-2 py-1 capitalize '>
@@ -30,7 +29,7 @@ const ExerciseCard = ({ exercise, loading }: ExerciseProps) => {
         </button>
         
       </div>
-      <h2 className='text-2xl font-bold mt-6 ml-12'>{exercise.name}</h2>
+      <h2 className='text-xl text-slate-gray group-hover:text-black font-bold lg:mt-6 mt-4'>{exercise.name}</h2>
     </Link>
   );
 };

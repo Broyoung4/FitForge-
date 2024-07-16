@@ -3,7 +3,7 @@
 const FitnessVideos: React.FC = ({exerciseVideos, name}) => {
   if(!exerciseVideos.length) return <div className='loading-anim'></div>;
   return (
-    <section className='mt-6'>
+    <section className='mt-16'>
        <h3 className='mb-4 text-lg leading-6 font-bold'>Watch <span className='text-sea-green capitalize'>{name}{' '}</span>exercises</h3>
       <div className='flex justify-start items-center gap-4 mb-20 flex-wrap'>
         {exerciseVideos?.slice(0, 3).map((item, index) => (

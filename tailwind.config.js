@@ -17,7 +17,7 @@ module.exports = {
         "pale-blue": "#F5F6FF",
         "white-400": "rgba(255, 255, 255, 0.80)",
         "sea-green": "#52d15a",
-        "dark-green": "#10690f",
+        "dark-green": "#10690F"
       },
       boxShadow: {
         '3xl': '0 10px 40px rgba(0, 0, 0, 0.1)'

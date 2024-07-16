@@ -1,6 +1,17 @@
-const mySecret =
+
+//import process from 'process';
+/*import dotenv from 'dotenv';
+dotenv.config()
+const apiKey = process.env ['REACT_APP_RAPID_API_KEY']; 
+
+/*const mySecret =
 import.meta. env['REACT_APP_RAPID_API_KEY'
 ];
+a1394e1c20msha5ca01a853e4f0dp1c3e45jsnd97b5cc469a5
+*/
+  /*const process = require('process');
+const apiKey = process.env ['REACT_APP_RAPID_API_KEY'];eee */
+
 
 export const exercisesOptions = {
    method: 'GET',

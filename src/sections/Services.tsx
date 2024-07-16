@@ -1,5 +1,4 @@
 
-import { useState, useTransition,useEffect } from 'react';
 import { BsStars } from "react-icons/bs";
 import { FaSquareArrowUpRight } from "react-icons/fa6";
 import { MdDoubleArrow } from "react-icons/md";
@@ -8,7 +7,7 @@ import { ManWorkout } from '../constants';
 import VideoBox from '../components/VideoBox';
 
 const ServiceBox = ({imgSrc, heading, parg, bcolor, tcolor}) => (
-  <div className={`flex flex-col justify-start  border border-slate-gray w-[360px] h-[430px] px-2 py-6 bg-${bcolor}  rounded-xl backdrop-blur-lg smooth-transition mx-auto`}>
+  <div className={`flex flex-col justify-start  border border-slate-gray w-[300px] h-[430px] px-2 py-6 bg-${bcolor}  rounded-xl backdrop-blur-lg smooth-transition mx-auto`}>
     <img src={imgSrc} className='object-contain' />
     <h3 className='text-black text-xl font-poppins font-bold leading-2 mt-2 capitalize'>{heading}</h3>
     <p className={`text-${tcolor} text-base text-left font-poppins font-normal leading-2 mt-2`}>{parg}</p>

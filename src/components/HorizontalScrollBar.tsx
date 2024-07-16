@@ -1,7 +1,6 @@
 import BodyPart from './BodyPart';
-import React, { useRef } from 'react';
+import { useRef } from 'react';
 import { BsArrowLeftShort, BsArrowRightShort } from 'react-icons/bs';
-import { ScrollMenu, VisibilityContext } from 'react-horizontal-scrolling-menu';
 import ExerciseCard from './ExerciseCard';
 
 

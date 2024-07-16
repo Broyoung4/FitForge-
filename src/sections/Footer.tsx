@@ -33,7 +33,7 @@ const Footer = () => (
     </div>
 
     <div className="mt-6">
-      <p className="sm:text-xl text-base font-montserrat text-sea-green mb-4">2024 Flucidia. All Rights reserved.</p>
+      <p className="sm:text-xl text-base font-montserrat text-sea-green mb-4">2024 Fit-Forge. All Rights reserved.</p>
     </div>
 
   </section>

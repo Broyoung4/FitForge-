@@ -4,7 +4,7 @@ import Loader from './Loader';
 
 const SimiliarExercises: React.FC = ({targetMuscleExercises, equipmentExercises}) => {
   return (
-    <div className='lg:mt-[1000px]'>
+    <div className='lg:mt-20'>
        <h3 className='mb-4 text-lg leading-6 font-bold'>Exercises that target the same muscle group</h3>
       <div className='flex items-center p-2 relative'>
         {targetMuscleExercises.length ? 

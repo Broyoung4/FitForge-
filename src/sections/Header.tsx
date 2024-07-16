@@ -9,7 +9,7 @@ const Header = () => {
     <section id='home'
       className='w-full flex xl:flex-row flex-col justify-between items-center min-h-screen max-container px-6 mt-20'
     >
-      <div className=' flex flex-col justify-center items-start w-full   flex-1'>
+      <div className=' flex flex-col justify-center items-start w-full flex-1 xl:mb-0 mb-8'>
         <p className='text-xl font-montserrat text-sea-green'>
           Our Latest Creations
         </p>
@@ -30,7 +30,7 @@ const Header = () => {
         </div>
       </div>
       <div className=' flex-1 flex justify-center items-center w-full'>
-        <img src={images.Welltoned} alt='Fade' className='z-10 object-contain border-2 border-sea-green w-[80%] '/>
+        <img src={images.Welltoned} alt='Fade' className='z-10 object-contain w-full h-[500px] '/>
         
       </div>
     </section>
