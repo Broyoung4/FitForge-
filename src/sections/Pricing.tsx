@@ -26,7 +26,7 @@ const Descriptions = [
     title: "Standard",
     price: "$49.99",
     description: ['10 classes per month', 'Comprehensive Nutrition plan', 'online fitness access', 'Exclusive fitness training'],
-    bgcolor: 'dark-green',
+    bgcolor: 'black',
     color:'white',
     btnbg: 'white',
     btntext: 'sea-green'
@@ -63,7 +63,7 @@ const Pricing: React.FC = () => {
   return (
     <section className='max-container min-h-screen flex flex-col gap-10 padding'>
       <div className='flex md:flex-row flex-col items-center justify-between'>
-         <h1 className="text-white text-3xl font-poppins font-bold leading-2 mb-8 capitalize max-w-[350px] ">Start your fitness journey process at<span className='text-sea-green flex mt-3 md:ml-0 ml-1.5 capitalize'> Fit-forge </span></h1>
+         <h1 className="text-neutral-500 text-3xl font-poppins font-bold leading-2 mb-8 capitalize max-w-[350px] ">Start your fitness journey process at<span className='text-sea-green flex mt-3 md:ml-0 ml-1.5 capitalize'> Fit-forge </span></h1>
         <p className="text-slate-gray text-base text-center font-poppins font-normal leading-2 mb-2">choose the subscription plan that best fits your fitness goals and preferences</p>
       </div>
       <div className='flex flex-row flex-wrap gap-10'> 

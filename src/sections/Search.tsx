@@ -59,7 +59,7 @@ setExercises(searchedExercises);
   }
   
   return (
-    <section className="min-h-auto max-container flex flex-col items-center gap-10">
+    <section id='exercises' className="min-h-auto max-container flex flex-col items-center gap-10">
       <h2 className="text-4xl font-extrabold">Awesome Exercises You Should Know</h2>
       {error && ( // Display error if there is one
         <p className="text-red-500">Error fetching exercises: {error.message}</p>
